@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJrUO1Tgp9AIhqxZfHHfdJW7Di4jwlhh83Lw&usqp=CAU" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="dados">
+        <p>Digite um número: <input type="number" name="num1" id="txtnum1"></p>
+        <p>Digite outro número: <input type="number" name="num2" id="txtnum2"></p>
+        
+        <input type="radio" name="txtcal" id="txtsoma" checked>
+        <label for="som">Adição</label>
+
+        <input type="radio" name="txtcal" id="txtmenos">
+        <label for="men">Subtração</label>
+
+        <input type="radio" name="txtcal" id="txtmult" >
+        <label for="mul">multipicação</label>
+
+        <input type="radio" name="txtcal" id="txtdiv">
+        <label for="div">divisão</label>
+        
+        <p><input type="button" value="Calcular" onclick="Calcular()"></p>
+
+    </div>
+    <div id="res">
+        Resultado...
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
